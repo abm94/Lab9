@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="A form to post and get bookmarks to/from a cloud database."/>
+        <title>Students App</title>
+        <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <form class="bookmarks-form">
+            <label>
+                Click the buttton to get the full list of bookmarks
+            </label>
+            <button id="submit-btn" type="submit">
+                Get bookmarks
+            </button>
+        </form>
+        <form class="add-bookmark-form">
+            <label for="titleInput">
+                Title:
+            </label>
+            <input type="text" id="titleInput" />
+            <label for="descriptionInput">
+                Description:
+            </label>
+            <input type="text" id="descriptionInput" />
+            <label for="urlInput">
+                url:
+            </label>
+            <input type="text" id="urlInput" />
+            <label for="ratingInput">
+                rating:
+            </label>
+            <input type="number" id="ratingInput" />
+            <button type="submit">
+                Add Bookmark
+            </button>
+        </form>
+        <br />
+        <br />
+        <form class="delete-form">
+            <label for="idInput">
+                Delete by id:
+            </label>
+            <input type="text" id="idInput" />
+            <button type="submit" id="deleteButton">
+                Delete
+            </button>
+
+        </form>
+
+        <form class="update-form">
+            Update items by ID:<br />
+            <label for="uID">ID:</label>
+            <input type="text" id="uID" />
+            <label for="uTitle">Title</label>
+            <input type="text" id="uTitle" />
+            <label for="uDescription">Description</label>
+            <input type="text" id="uDescription" />
+            <label for="uUrl">Url:</label>
+            <input type="text" id="uUrl" />
+            <label for="uRating">Rating:</label>
+            <input type="number" id="uRating" />
+            <button type="submit" id="submitUpdate">
+                Update
+            </button>
+        </form>
+
+        <div>Bookmarks:</div><br />
+        <section class="results">
+
+        </section>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
